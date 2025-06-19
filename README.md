@@ -20,9 +20,7 @@ makes it easier to take advantage of low-cost commodity GPUs.
 
 The goal of FlexLLMGen is to create a high-throughput system to enable new and exciting applications of 
 foundation models to throughput-oriented tasks on low-cost hardware, such as a single commodity GPU
-instead of expensive systems.
-
-Check out the [examples](#examples) of what you can run on a single commodity GPU with FlexLLMGen, including benchmarking and data wrangling.
+instead of expensive systems.  
 
 ❌ **Limitation**. As an offloading-based system running on weak GPUs, FlexLLMGen also has its limitations.
 FlexLLMGen can be significantly slower than the case when you have enough powerful GPUs to hold the whole model, especially for small-batch cases.
