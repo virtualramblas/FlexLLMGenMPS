@@ -14,7 +14,7 @@ classifiers = [
 ]
 dependencies = [
     "torch>=2.7.1", "transformers>=4.24",
-    "numpy", "tqdm",
+    "numpy", "tqdm", "attrs",
 ]
 
 [project.urls]
