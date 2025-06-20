@@ -1,6 +1,6 @@
 # FlexLLMGen: High-throughput Generative Inference of Large Language Models with a Single GPU [[paper](https://arxiv.org/abs/2303.06865)]
 
-FlexLLMGen is a high-throughput generation engine for running large language models with limited GPU memory. FlexLLMGen allows **high-throughput** generation by IO-efficient offloading, compression, and **large effective batch sizes**. This repo is a port of FlexLLMGen to Apple Silicon (M1/M2) GPU, as the original work supports only NVIDIA GPUs.  
+FlexLLMGen is a high-throughput generation engine for running large language models with limited GPU memory. FlexLLMGen allows **high-throughput** generation by IO-efficient offloading, compression, and **large effective batch sizes**. This repo is a port of FlexLLMGen to Apple Silicon (M1/M2) GPU, as the [original work](https://github.com/FMInference/FlexLLMGen) supports only NVIDIA GPUs.  
 
 ## Motivation
 
@@ -24,4 +24,11 @@ instead of expensive systems.
 
 ❌ **Limitation**. As an offloading-based system running on weak GPUs, FlexLLMGen also has its limitations.
 FlexLLMGen can be significantly slower than the case when you have enough powerful GPUs to hold the whole model, especially for small-batch cases.
-FlexLLMGen is mostly optimized for throughput-oriented batch processing settings (e.g., classifying or extracting information from many documents in batches), on single GPUs.
+FlexLLMGen is mostly optimized for throughput-oriented batch processing settings (e.g., classifying or extracting information from many documents in batches), on single GPUs.  
+## Installation
+From source:  
+```
+git clone https://github.com/virtualramblas/FlexLLMGenMPS.git
+cd FlexLLMGenMPS
+pip install -e .
+```
